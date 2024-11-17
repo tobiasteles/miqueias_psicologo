@@ -199,3 +199,93 @@ section .topo-do-site .flex {
   position: relative;
   border-radius: 30px;
 }
+
+/* ESPECIALIDADES */
+
+.especialidades {
+  padding: 40px 4%;
+}
+
+.especialidades .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.especialidades .especialidades-box {
+  color: #1d3557;
+  padding: 40px;
+  margin-top: 45px;
+  border-radius: 20px;
+  transition: 0.2s;
+  flex: 1 1 calc(33.333% - 40px);
+  max-width: calc(3333.333% - 40px);
+}
+
+.especialidades .especialidades-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px #1d355785;
+}
+
+.especialidades .especialidades h3 {
+  font-size: 26px;
+  margin: 15px 0;
+}
+
+.especialidades .especialidades-box p {
+  color: #457b9d;
+}
+
+/* ESTILO SOBRE */
+
+.sobre {
+  padding: 80px 4%;
+}
+
+.sobre .img-sobre img {
+  border-radius: 30px;
+}
+
+.sobre .flex {
+  align-items: center;
+  gap: 60px;
+}
+
+.sobre .txt-sobre {
+  color: #1d3557;
+}
+
+.sobre .txt-sobre h2 {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.sobre .txt-sobre p {
+  margin: 20px 0;
+  text-align: justify;
+}
+
+/* ESTILO PACOTES */
+
+.pacotes {
+  padding: 40px 4%;
+}
+
+.pacotes .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}a
+
+.pacotes .pacote-box {
+  color: #457b9d;
+  padding: 40px;
+  margin-top: 45px;
+  border-radius: 20px;
+  transition: 0.2s;
+  width: calc(33.333%-40px);
+  box-sizing: border-box;
+}
