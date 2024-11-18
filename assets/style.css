@@ -1,6 +1,6 @@
 /* ESTILO GERAL */
 * {
-  margin: 0.1;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -268,7 +268,6 @@ section .topo-do-site .flex {
 }
 
 /* ESTILO PACOTES */
-
 .pacotes {
   padding: 40px 4%;
 }
@@ -277,15 +276,115 @@ section .topo-do-site .flex {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  justify-content: space-between;
-}a
+  justify-content: center;
+}
 
 .pacotes .pacote-box {
-  color: #457b9d;
+  color: #1d3557;
   padding: 40px;
   margin-top: 45px;
   border-radius: 20px;
   transition: 0.2s;
-  width: calc(33.333%-40px);
-  box-sizing: border-box;
+  flex: 1 1 calc(33.333% - 40px);
+  max-width: calc(3333.333% - 40px);
 }
+
+.pacotes .pacote-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px #1d355785;
+}
+
+.pacotes .pacotes h3 {
+  font-size: 26px;
+  margin: 15px 0;
+}
+
+.pacotes .pacote-box p {
+  color: #457b9d;
+}
+
+/* ESTILO FORMULARIO */
+
+.formulario {
+  padding: 80px 4%;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+form input::placeholder {
+  color: #ffffff;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  background-color: #1d3557;
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  border-radius: 15px;
+  color: #a8dadc;
+  font-size: 18px;
+}
+
+form textarea {
+  resize: none;
+  max-height: 200px;
+}
+
+form .btn-enviar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+form .btn-enviar input {
+  width: 120px;
+  background-color: #1d3557;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+form .btn-enviar input:hover {
+  box-shadow: 0px 0px 8px #1d355785;
+  transform: scale(1.05);
+}
+
+/* ESTILO RODAPE */
+footer {
+  padding: 60px 4%;
+  box-shadow: 0 0 40px 10px #457b9d;
+}
+
+footer .flex {
+  justify-content: space-between;
+}
+
+footer .line-footer {
+  padding: 20px 0;
+}
+
+.borda {
+  border-bottom: 2px solid #52b788;
+}
+
+footer .line-footer p i {
+  color: #1d3557;
+  font-size: 30px;
+}
+
+footer .line-footer p a {
+  color: #457b9d;
+  text-decoration: none;
+}
+
+/* RESPONSIVIDADE */
+
