@@ -388,3 +388,83 @@ footer .line-footer p a {
 
 /* RESPONSIVIDADE */
 
+@media screen and (max-width: 1020px) {
+  /* GERAL */
+  .flex {
+    flex-direction: column;
+  }
+  .topo-do-site .flex {
+    flex-direction: column-reverse;
+  }
+
+  /* CABEÇALHO */
+  .menu-desktop,
+  .btn-contato {
+    display: none;
+  }
+  /* TOPO DO SITE */
+  .topo-do-site h1 {
+    font-size: 30px;
+  }
+  .topo-do-site {
+    padding: 20px 8%;
+  }
+  .topo-do-site .img-topo-site img {
+    width: 100%;
+  }
+  .topo-do-site .flex {
+    gap: 40px;
+  }
+  /* ESPECIALIDADES */
+  .especialidades {
+    padding: 40px 8%;
+  }
+  h2.titulo {
+    font-size: 34px;
+    line-height: 30px;
+    align-items: center;
+  }
+  /* SOBRE */
+  .sobre {
+    padding: 80px 8%;
+  }
+  .sobre .txt-sobre h2 {
+    font-size: 34px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .btn-social {
+    text-align: center;
+  }
+  .img-sobre img {
+    width: 100%;
+  }
+  /* pacotes */
+  .pacotes {
+    padding: 80px 8%;
+  }
+  .img-port {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .pacotes .flex {
+    gap: 60px;
+  }
+
+  /* FORMULÁRIO */
+
+  .formulario textarea {
+    font-size: 20px;
+    height: 175px;
+  }
+
+  /* RODAPE */
+  footer .flex {
+    flex-direction: column;
+    gap: 30px;
+  }
+  footer .line-footer {
+    text-align: center;
+  }
+}
