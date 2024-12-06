@@ -359,10 +359,16 @@ form .btn-enviar input:hover {
 }
 /* ESTILO DEPOIMENTOS */
 .depoimentos {
-  padding-top: 100px;
+  padding: 40px 4%;
 }
 
-.depoimentos .col-3 {
+.depoimentos .flex {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.depoimentos .depoimento-box {
   text-align: center;
   padding: 40px 20px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
@@ -370,32 +376,32 @@ form .btn-enviar input:hover {
   transition: transform 0.5s;
 }
 
-.depoimentos .col-3:hover {
+.depoimentos .depoimento-box:hover {
   transform: scale(1.1);
 }
 
-.depoimentos .col-3 img {
+.depoimentos .depoimento-box img {
   width: 50px;
   border-radius: 50%;
   margin-top: 20px;
-  border: 2px solid var(--cor-padrao);
+  border: 2px solid #457b9d;
 }
 
 .depoimento-icone {
   font-size: 34px;
-  color: var(--cor-padrao);
+  color: #1d3557;
 }
 
-.col-3 p {
+.depoimento-box p {
   font-size: 13px;
-  color: var(--cor-fonte-p);
+  color: #1d3557;
   margin: 12px 0;
 }
 
-.depoimentos .col-3 h3 {
+.depoimentos .depoimento-box h3 {
   font-size: 16px;
   font-weight: 600;
-  color: var(--cor-fonte-corpo);
+  color: #457b9d;
 }
 /* ESTILO RODAPE */
 footer {
