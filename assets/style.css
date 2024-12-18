@@ -374,6 +374,9 @@ form .btn-enviar input:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.5s;
+  width: 300px; /* Define uma largura fixa */
+  max-width: 100%; /* Garante que não exceda o container */
+  box-sizing: border-box; /* Inclui padding no cálculo da largura */
 }
 
 .depoimentos .depoimento-box:hover {
