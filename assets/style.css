@@ -167,7 +167,7 @@ header nav.menu-desktop ul li {
 
 /* TOPO DO SITE */
 
-section .topo-do-site {
+section.topo-do-site {
   padding: 40px 4%;
 }
 
@@ -308,54 +308,21 @@ section .topo-do-site .flex {
 .formulario {
   padding: 80px 4%;
 }
-
-form {
-  max-width: 500px;
-  margin: 0 auto;
+.formulario .flex{
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 40px;
-}
-
-form input::placeholder {
-  color: #ffffff;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  background-color: #1d3557;
-  border: 0;
-  outline: 0;
-  padding: 20px 15px;
-  border-radius: 15px;
-  color: #a8dadc;
-  font-size: 18px;
-}
-
-form textarea {
-  resize: none;
-  max-height: 200px;
-}
-
-form .btn-enviar {
-  margin-top: 20px;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;  
+  padding: 20px; 
+  box-sizing: border-box; 
 }
+.formulario .iframe {
+  max-width: 100%;       /* Limita a largura máxima */
+  height: 1700px;           /* Ajusta a altura */
+  border: none;
+  
 
-form .btn-enviar input {
-  width: 120px;
-  background-color: #1d3557;
-  font-weight: 700;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-form .btn-enviar input:hover {
-  box-shadow: 0px 0px 8px #1d355785;
-  transform: scale(1.05);
 }
 /* ESTILO DEPOIMENTOS */
 .depoimentos {
